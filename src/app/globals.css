@@ -1,0 +1,44 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #7ba2c4; 
+  color: #1653cf; 
+}
+
+h1 {
+  @apply text-4xl font-extrabold text-center my-8;
+}
+
+container {
+  @apply min-h-screen flex flex-col items-center py-10;
+}
+
+card-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6;
+}
+
+student-card {
+  @apply bg-white shadow-lg p-4 max-w-xs mx-auto transition duration-300 hover:shadow-2xl;
+  height: 400px; 
+  width: 250px; 
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+student-card h2 {
+  @apply text-xl font-bold mb-2;
+}
+
+student-card p {
+  @apply text-gray-600;
+ 
+}
+
